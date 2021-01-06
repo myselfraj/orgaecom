@@ -37,7 +37,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder> 
     Context context;
     int pQuantity = 1;
     String _subtotal, _price, _quantity;
-    LocalStorage localStorage;
+    LocalStorage localStorage;      
     Gson gson;
 
     public CartAdapter(List<Cart> cartList, Context context) {
