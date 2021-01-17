@@ -12,7 +12,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
-        android:layout_width="300dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:padding="10dp"
         app:cardCornerRadius="15dp"
@@ -45,24 +45,46 @@
                     android:layout_centerVertical="true" />
             </RelativeLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <TextView
+                    android:id="@+id/product_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="\u20B9"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="12"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/product_title"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_centerInParent="true"
                 android:layout_margin="5dp"
-                android:text="Food"
                 android:lines="2"
                 android:maxLines="2"
-                android:gravity="center"
-                android:textColor="@color/colorAccent"
+                android:text="Food"
+                android:textColor="#808080"
                 android:textSize="14dp" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
@@ -70,40 +92,9 @@
                     android:id="@+id/product_attribute"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:text="1 Bunch"
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerInParent="true"
-                    android:text="-"
-                    android:textSize="20dp" />
-
-
-                <TextView
-                    android:id="@+id/product_currency"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerInParent="true"
-                    android:layout_marginLeft="5dp"
-                    android:text="Rs."
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:id="@+id/product_price"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerInParent="true"
-                    android:layout_marginLeft="3dp"
-                    android:text="12"
                     android:textSize="16dp" />
 
             </LinearLayout>
@@ -115,12 +106,13 @@
                 <TextView
                     android:id="@+id/shop_now"
                     style="@android:style/MediaButton"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/shop_button_bg"
-                    android:padding="10dp"
+                    android:gravity="center"
+                    android:padding="8dp"
                     android:text="shop Now"
                     android:textColor="@color/gen_white" />
 
