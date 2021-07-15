@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -281,7 +282,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
         ImageView imageView;
         TextView title;
         ProgressBar progressBar;
-        CardView cardView;
+        LinearLayout cardView;
         TextView offer, currency, price, quantity, attribute, addToCart, subTotal;
         Button plus, minus;
 

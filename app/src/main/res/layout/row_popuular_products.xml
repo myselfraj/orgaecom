@@ -121,8 +121,12 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/shop_button_bg"
-                        android:padding="10dp"
-                        android:text="shop Now"
+                        android:paddingStart="@dimen/margin_20dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingEnd="@dimen/margin_20dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:text="@string/add_cart"
+                        android:textSize="14dp"
                         android:textColor="@color/gen_white" />
 
                     <LinearLayout
@@ -146,7 +150,7 @@
                             android:paddingBottom="5dp"
                             android:text="-"
                             android:textColor="@color/white"
-                            android:textSize="20dp"
+                            android:textSize="14dp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -160,7 +164,7 @@
                             android:paddingBottom="5dp"
                             android:text="1"
                             android:textColor="@color/white"
-                            android:textSize="20dp"
+                            android:textSize="14dp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -174,7 +178,7 @@
                             android:paddingBottom="5dp"
                             android:text="+"
                             android:textColor="@color/white"
-                            android:textSize="20dp"
+                            android:textSize="14dp"
                             android:textStyle="bold" />
 
 

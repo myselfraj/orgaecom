@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -122,7 +123,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.MyView
         ImageView imageView;
         TextView title;
         ProgressBar progressBar;
-        CardView cardView;
+        LinearLayout cardView;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);

@@ -5,7 +5,7 @@
    * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
    -->
 <resources>
-    <color name="colorPrimary">#FA5258</color>
+    <color name="colorPrimary">#BF539B44</color>
     <color name="colorPrimaryDark">#FAD23C</color>
     <color name="colorAccent">#ff009688</color>
     <color name="red_400">#FC5952</color>
@@ -138,8 +138,7 @@
     <color name="colorSub">#b0afaf</color>
     <color name="colorTex">#585858</color>
     <color name="colorblue">#4c71f5</color>
-
-
+    <color name="headercolor">#91c52a</color>
     <color name="color">#767578</color>
 
 
@@ -164,5 +163,5 @@
      10% — 1A
      5% — 0D
      0% — 00-->
-
+    <!--#D0BA94-->
 </resources>

@@ -30,7 +30,7 @@
 
     <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
         <item name="spinBars">true</item>
-        <item name="color">#FAD23C</item>
+        <item name="color">#FFFFFF</item>
     </style>
 
     <style name="CustomTextStyle" parent="@android:style/TextAppearance.Widget.TabWidget">

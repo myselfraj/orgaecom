@@ -76,7 +76,7 @@ public class MainActivity extends BaseActivity
         if (!outViews.isEmpty()) {
             final TextView titleView = (TextView) outViews.get(0);
             titleView.setGravity(Gravity.CENTER);
-            titleView.setTextColor(Color.parseColor("#FAD23C"));
+            titleView.setTextColor(Color.parseColor("#FFFFFF"));
             final Toolbar.LayoutParams layoutParams = (Toolbar.LayoutParams) titleView.getLayoutParams();
             layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
             toolbar.requestLayout();

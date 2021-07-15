@@ -1,28 +1,24 @@
 package com.quintus.labs.grocerystore.activity;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Gravity;
-import android.view.MenuItem;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.quintus.labs.grocerystore.R;
-import com.quintus.labs.grocerystore.fragment.AddressFragment;
 
-public class CheckoutActivity extends BaseActivity {
+public class AddAddressActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_checkout);
+        setContentView(R.layout.activity_add_address);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
         changeActionBarTitle(getSupportActionBar());
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -30,11 +26,6 @@ public class CheckoutActivity extends BaseActivity {
 
         final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back_black_24dp);
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
-
-        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left);
-        ft.replace(R.id.content_frame, new AddressFragment());
-        ft.commit();
     }
 
     private void changeActionBarTitle(ActionBar actionBar) {
@@ -48,10 +39,10 @@ public class CheckoutActivity extends BaseActivity {
         tv.setGravity(Gravity.CENTER);
         //tv.setTypeface(null, Typeface.BOLD);
         // Set text to display in TextView
-        tv.setText("Checkout"); // ActionBar title text
+        tv.setText("Enter a shipping address"); // ActionBar title text
         Typeface tf = Typeface.createFromAsset(getApplicationContext().getAssets(), "fonts/Merienda-Bold.ttf");
         tv.setTypeface(tf);
-        tv.setTextSize(20);
+        tv.setTextSize(14);
 
         // Set the text color of TextView to red
         // This line change the ActionBar title text color
@@ -63,27 +54,4 @@ public class CheckoutActivity extends BaseActivity {
         actionBar.setCustomView(tv);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                // todo: goto back activity from here
-
-                Intent intent = new Intent(CheckoutActivity.this, CartActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-                overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
-                finish();
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
-    }
 }

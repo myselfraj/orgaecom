@@ -8,7 +8,7 @@
     android:id="@+id/footer_text"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/gradient_bg"
+    android:background="#4B2525"
     android:gravity="bottom"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">

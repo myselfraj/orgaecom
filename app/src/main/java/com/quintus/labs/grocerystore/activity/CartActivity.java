@@ -191,7 +191,7 @@ public class CartActivity extends BaseActivity {
 
     public void onCheckoutClicked(View view) {
 
-        startActivity(new Intent(getApplicationContext(), CheckoutActivity.class));
+        startActivity(new Intent(getApplicationContext(), AddAddressActivity.class));
     }
 
     @Override

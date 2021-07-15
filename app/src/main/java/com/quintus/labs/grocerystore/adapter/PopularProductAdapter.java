@@ -227,7 +227,7 @@ public class PopularProductAdapter extends RecyclerView.Adapter<PopularProductAd
         ProgressBar progressBar;
         LinearLayout quantity_ll;
         TextView plus, minus, quantity;
-        CardView cardView;
+        LinearLayout cardView;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);

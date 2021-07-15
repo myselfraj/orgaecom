@@ -35,4 +35,6 @@
     <string name="submit">SUBMIT</string>
     <string name="back">BACK</string>
     <string name="action_Cart">Cart</string>
+
+    <string name="add_cart">ADD</string>
 </resources>

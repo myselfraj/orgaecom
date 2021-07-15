@@ -8,21 +8,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@drawable/gradient_bg"
+    android:background="#4B2525"
     android:gravity="left|bottom"
     android:orientation="horizontal"
     android:paddingLeft="5dp"
     android:paddingBottom="15dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <!--<de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/logo_1"
         app:civ_border_color="@color/borderColor"
         app:civ_border_width="2dp"
-        app:civ_circle_background_color="@color/white" />
+        app:civ_circle_background_color="@color/white" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="@dimen/header_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="16dp"
+        android:text="Hi "
+        android:textStyle="bold" />
+
 
     <TextView
         android:id="@+id/nav_header_name"

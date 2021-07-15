@@ -28,7 +28,7 @@
                 android:layout_height="70dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/margin_15dp"
-                android:src="@drawable/logo" />
+                android:src="@drawable/logo_1" />
         </androidx.cardview.widget.CardView>
 
 
